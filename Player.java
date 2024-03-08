@@ -4,6 +4,8 @@
 
 public class Player {
     private String name;
+    int position;
+    
     public Player(String n) {
         setName(n);
     }
