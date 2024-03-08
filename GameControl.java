@@ -1,15 +1,17 @@
 // Toki Young
+import java.util.Scanner;
 
 public class GameControl {
     // Fields and Properties==============================
     Player p;
-    Map m;
+
     Wumpus w;
     Cave c;
     Pit pit;
+    Scanner sc;
     // Constructors=========================
     public GameControl() {
-
+        this.p = new Player("");
     }
 
     // Methods===============================
@@ -18,10 +20,11 @@ public class GameControl {
     }
 
     public int[] checkOpenings(Player p) {
-        return -1;
+        int[] i = new int[0];
+        return i;
     }
 
-    public boolean closeToHazard(Player p, Map m) {
+    public boolean closeToHazard(Player p) {
         return true;
     }
 
