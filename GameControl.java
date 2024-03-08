@@ -7,7 +7,6 @@ public class GameControl {
     Wumpus w;
     Cave c;
     Pit pit;
-    
     // Constructors=========================
     public GameControl() {
 
