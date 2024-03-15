@@ -1,10 +1,12 @@
 // Toki Young
 import java.util.Scanner;
+import javax.swing.JFrame;
+import java.awt.GridLayout;
 
 public class GameControl {
     // Fields and Properties==============================
     Player player;
-
+    JFrame frame;
     Wumpus wumpus;
     Cave cave;
     Hazards hazards;
@@ -16,13 +18,22 @@ public class GameControl {
         this.player = new Player("");
         this.wumpus = new Wumpus();
         this.hazards = new Hazards();
-        this.cave = Cave();
+        this.cave = new Cave();
+        
+
         
     }
 
     // Methods===============================
-    public void startGame(6) {
-        cave.makeArray();
+    public void startGame() {
+        //cave.makeArray();
+        this.frame = new JFrame();
+       
+        frame.setTitle("Hunt the Wumpus!");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(275, 275);
+        frame.setLayout(new GridLayout(3,3));
+
 
     }
 
@@ -51,7 +62,9 @@ public class GameControl {
     }
 
     public boolean checkSameCaveAsPit(Player p, Pit pit) {
-        if(gameControl.playerPosition == gameLocation.hazardLocation)
-        return true;
+        if(gameLocation.playerLocation == gameLocation.hazardLocation) {
+            return true;
+        } else return true;
+
     }
 }
