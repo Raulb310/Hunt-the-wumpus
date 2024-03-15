@@ -3,19 +3,26 @@ import java.util.Scanner;
 
 public class GameControl {
     // Fields and Properties==============================
-    Player p;
+    Player player;
 
-    Wumpus w;
-    Cave c;
-    Pit pit;
-    Scanner sc;
+    Wumpus wumpus;
+    Cave cave;
+    Hazards hazards;
+    Scanner scanner;
+    GameLocation gameLocation;
     // Constructors=========================
     public GameControl() {
-        this.p = new Player("");
+        this.scanner = new Scanner(System.in);
+        this.player = new Player("");
+        this.wumpus = new Wumpus();
+        this.hazards = new Hazards();
+        this.cave = Cave();
+        
     }
 
     // Methods===============================
-    public void startGame() {
+    public void startGame(6) {
+        cave.makeArray();
 
     }
 
@@ -44,6 +51,7 @@ public class GameControl {
     }
 
     public boolean checkSameCaveAsPit(Player p, Pit pit) {
+        if(gameControl.playerPosition == gameLocation.hazardLocation)
         return true;
     }
 }
