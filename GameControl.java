@@ -33,6 +33,9 @@ public class GameControl {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(275, 275);
         frame.setLayout(new GridLayout(3,3));
+        frame.setResizable(true);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
 
 
     }
