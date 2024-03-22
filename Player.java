@@ -2,6 +2,7 @@
 // Period 6
 // Team BeanRice
 
+
 public class Player {
     private String name;
     int position;
