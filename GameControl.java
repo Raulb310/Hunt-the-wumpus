@@ -1,9 +1,10 @@
 // Toki Young
 import java.util.Scanner;
 import javax.swing.JFrame;
-import java.awt.GridLayout;
+import java.lang.Math;
 
-public class GameControl {
+
+public class GameControl{
     // Fields and Properties==============================
     Player player;
     JFrame frame;
@@ -12,6 +13,8 @@ public class GameControl {
     Hazards hazards;
     Scanner scanner;
     GameLocation gameLocation;
+    GUI gui;
+    
     // Constructors=========================
     public GameControl() {
         this.scanner = new Scanner(System.in);
@@ -19,7 +22,11 @@ public class GameControl {
         this.wumpus = new Wumpus();
         this.hazards = new Hazards();
         this.cave = new Cave();
+        new GUI();
         
+        
+        
+
 
         
     }
@@ -27,15 +34,7 @@ public class GameControl {
     // Methods===============================
     public void startGame() {
         //cave.makeArray();
-        this.frame = new JFrame();
-       
-        frame.setTitle("Hunt the Wumpus!");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(275, 275);
-        frame.setLayout(new GridLayout(3,3));
-        frame.setResizable(true);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+        
 
 
     }
@@ -58,10 +57,11 @@ public class GameControl {
     }
 
     public boolean startTrivia(){
+        
         return true;
     }
     public void teleportPlayer() {
-
+        //player.goTo(Math.random(), Math.random());
     }
 
     public boolean checkSameCaveAsPit(Player p, Pit pit) {
