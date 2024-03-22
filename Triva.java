@@ -1,8 +1,13 @@
+import java.io.File;
+import java.io.FileWriter;
+
 public class Triva {
     
-     boolean askQuestion = false;
+    boolean askQuestion = false;
+    boolean[][] storQuestions;
 
     public Triva(){
+        
     }
 
     public boolean askQuestion(){
@@ -11,4 +16,6 @@ public class Triva {
             System.out.println("i asked a question");
         }
     }
+
+    
 }
