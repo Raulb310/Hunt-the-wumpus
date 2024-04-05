@@ -1,6 +1,5 @@
-// Toki Y  v oung
+// Toki Y 
 // Period 6
-// Team BeanRice
 
 
 public class Player {

@@ -42,6 +42,7 @@ public class GameControl{
         if(cave.isValid(newPositions)){
             player.setPosition(newPositions);
             String[] details = cave.getDetails(newPositions);
+            new FakeGui();
             fakegui.setInfo(details);
 
         } else {

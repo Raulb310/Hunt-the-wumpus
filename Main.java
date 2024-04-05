@@ -8,8 +8,8 @@ class Main {
         gc.startGame();
         System.out.println("Thing works.");
 
-        Question q = new Question();
-        System.out.println(q.checkAnswer("red"));
+        //Question q = new Question();
+        //System.out.println(q.checkAnswer("red"));
 
 
 
