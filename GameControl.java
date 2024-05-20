@@ -1,7 +1,6 @@
 // Toki Young
 import java.util.Scanner;
 import javax.swing.JFrame;
-import java.lang.Math;
 
 
 public class GameControl{
@@ -14,6 +13,7 @@ public class GameControl{
     Scanner scanner;
     GameLocation gameLocation;
     GUI gui;
+    FakeGui fakegui;
     
     // Constructors=========================
     public GameControl() {
@@ -22,9 +22,13 @@ public class GameControl{
         this.wumpus = new Wumpus();
         this.hazards = new Hazards();
         this.cave = new Cave();
-        new GUI();
+        new FakeGui();
         
+        while(true) {
         
+            
+            turn();
+        }
         
 
 
@@ -32,6 +36,21 @@ public class GameControl{
     }
 
     // Methods===============================
+    void turn(){
+        int[] newPositions = fakegui.getPosition();
+        // is move valid? whi knows that?
+        if(cave.isValid(newPositions)){
+            player.setPosition(newPositions);
+            String[] details = cave.getDetails(newPositions);
+            new FakeGui();
+            fakegui.setInfo(details);
+
+        } else {
+            fakegui.invalid("Invalid");
+        }
+
+    }
+
     public void startGame() {
         //cave.makeArray();
         
