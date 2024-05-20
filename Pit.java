@@ -9,8 +9,6 @@ public class Pit extends Hazards {
 
     public Pit(){
         
-
-
     }
 
     

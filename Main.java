@@ -10,6 +10,7 @@ class Main {
 
         Question q = new Question();
         System.out.println(q.checkAnswer("red"));
+        
 
 
 
