@@ -4,19 +4,24 @@
 
 class Main {
     public static void main(String[] args) {
+        Triva tr = new Triva();
+
+        System.out.println(tr);
+
+
+
+  System.out.println("hello word");
+  
+        /* 
         GameControl gc = new GameControl();
         gc.startGame();
         System.out.println("Thing works.");
 
-        Question q = new Question();
-        System.out.println(q.checkAnswer("red"));
-        
+        Triva t = new Triva();
 
+        System.out.println(t);
+*/
 
-
-
-        Question q2 = new Question("steves favorite color " , "green");
-        System.out.println(q2.checkAnswer("green"));
         
     }
 }

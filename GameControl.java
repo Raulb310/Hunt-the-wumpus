@@ -37,7 +37,8 @@ public class GameControl{
 
     // Methods===============================
     void turn(){
-        int[] newPositions = fakegui.getPosition();
+        /* 
+      //  int[] newPositions = fakegui.getPosition();
         // is move valid? whi knows that?
         if(cave.isValid(newPositions)){
             player.setPosition(newPositions);
@@ -48,6 +49,7 @@ public class GameControl{
         } else {
             fakegui.invalid("Invalid");
         }
+        */
 
     }
 

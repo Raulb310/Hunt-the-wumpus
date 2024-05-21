@@ -8,13 +8,24 @@ public class Hazards {
 
     public Hazards(){
     //constructor------------------
-        
+        bat();
+
     }
 
    
     public int damage(int hp){
         return health--;
+
     } 
+
+    public int bat(){
+        
+        return health--;
+    }
+
+    public void bottomLessPit(){
+        
+    }
 
     
 
